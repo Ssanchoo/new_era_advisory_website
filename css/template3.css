@@ -153,7 +153,7 @@
         padding: 0;
         box-shadow: none;
         display: block;
-        margin-right: 175px;
+        margin-right: 250px;
     }
 
     .nav-links ul {
@@ -165,7 +165,11 @@
     .nav-links li {
         border-bottom: none;
     }
-
+    .nav-links ul li a {
+    white-space: nowrap; /* Текст больше не будет переноситься */
+    display: block;
+    padding: 10px 15px;
+    }
     .nav-links a {
         padding: 10px 5px;
         font-size: 15px;
