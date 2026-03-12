@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промышленность и мобильность - New Era Advisory</title>
+    
+    <link rel="stylesheet" href="../../css/industry-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/industries/industrials.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="industry-detail-header">
+            <h1>Промышленность и мобильность</h1>
+            <p class="hero-subtext">Производители должны развивать бизнес-модели, бесшовно интегрировать продукты через цифровизацию и ориентироваться на клиента.</p>
+        </section>
+
+        <section class="main-content">
+            <p>В условиях фундаментальных сдвигов в промышленном секторе компании разрабатывают инновационные бизнес-модели, чтобы соответствовать меняющемуся спросу. Цифровизация заставляет производителей переосмысливать свои цепочки поставок, чтобы полностью реализовать преимущества единой экосистемы и повысить операционную эффективность.</p>
+            <p>Изменения в отрасли создают «эффект домино» для химической, авиакосмической и оборонной промышленности; риски затрагивают все предприятие и могут ограничивать технологическую интеграцию.</p>
+            <p>Команды NEA используют комплексный подход, чтобы помочь вам использовать потенциал цифровых технологий для ускорения производительности, оптимизации портфелей и формирования четкой дорожной карты «умного» производства.</p>
+        </section>
+
+        <section class="offerings-grid">
+            <h2>Как мы помогаем</h2>
+            <div class="row">
+                <div class="card">
+                    <h3>Переосмысление цепочек поставок</h3>
+                    <p>Помогаем клиентам коренным образом изменить показатели эффективности для поддержки роста продаж.</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>Кибер-архитектура и инжиниринг</h3>
+                    <p>Узнайте, как услуги NEA могут защитить ваш бизнес в различных аспектах портфеля кибербезопасности.</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>Консалтинг в 3D-печати</h3>
+                    <p>Разработка продуктов со спецификациями, которых было трудно достичь традиционными методами.</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3>Аналитика персонала</h3>
+                    <p>Внедрение систем аналитики для регулярного планирования действий, отчетности и прогнозных данных.</p>
+                   
+                </div>
+                <div class="card">
+                    <h3>Стратегия отделения активов</h3>
+                    <p>Наши услуги по разделению активов помогают управлять портфелем для повышения стоимости бизнеса.</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>Цифровая фабрика</h3>
+                    <p>Внедрение IoT, ИИ и технологий «умного» завода для улучшения мониторинга производства.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <section class="footer-copyright">
+                <p>&copy; 2025 New Era Advisory. Все права защищены.</p>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - New Era Advisory</title>
+    <link rel="stylesheet" href="css/template3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown"><a href="/industries.html">Industries </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/industries/energy.html">Energy & Resources</a></li>
+                        <li><a href="/industries/government.html">Government & Infrastructure</a></li>
+                        <li><a href="/industries/industrials.html">Industrials & Mobility</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/services.html">Services </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/services/consulting.html">Consulting</a></li>
+                        <li><a href="/services/tax.html">Tax</a></li>
+                        <li><a href="/services/law.html">Law</a></li>
+                        <li><a href="/services/people_workforce.html">People & Workforce</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/ru/contact.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="sub-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.7702220188065!2d76.9073163154843!3d43.23528197913745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ec470a1a8a9%3A0xe7c4566c7f8a7d!2sAtakent!5e0!3m2!1sen!2skz!4v1614150000000!5m2!1sen!2skz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col">
+                    <div> 
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Atakent Exhibition Center</h5>
+                            <p>Almaty, Kazakhstan</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+7 777-777-7777</h5>
+                            <p>Monday–Friday, 10:00–18:00</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>nea.advisory@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+     <h4>About Us</h4>
+                <p>Empowering businesses and individuals in the digital era.</p>
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. All rights reserved.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

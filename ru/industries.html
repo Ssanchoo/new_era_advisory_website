@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индустрии - New Era Advisory</title>
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/industries.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Индустрии</h1>
+                <p>Мы сотрудничаем с организациями в различных секторах для стимулирования инноваций, устойчивого развития и роста.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <p>С момента основания New Era Advisory сотрудничает с клиентами из различных отраслей — от энергетики и финансов до здравоохранения и технологий — помогая им адаптироваться к изменениям рынка.</p>
+        </div>
+    </section>
+
+    <section class="industries">
+        <div class="container">
+            <h2>Отрасли, которые мы обслуживаем</h2>
+            <div class="cards">
+                <div class="card" id="energy">
+                    <h3>Энергетика и ресурсы</h3>
+                    <p>Мы помогаем организациям в сфере энергетики и природных ресурсов находить правильные решения для ускорения энергетического перехода и реализации коммерческих возможностей.</p>
+                    <a href="/ru/industries/energy.html" class="explore-btn">Исследовать</a>
+                </div>
+                <div class="card" id="financial">
+                    <h3>Госсектор и инфраструктура</h3>
+                    <p>Мы работаем с государственными органами и поставщиками инфраструктуры для повышения общественной ценности за счет эффективного использования людей, финансов и технологий.</p>
+                    <a href="/ru/industries/government.html" class="explore-btn">Исследовать</a>
+                </div>
+                <div class="card" id="technology">
+                    <h3>Промышленность и мобильность</h3>
+                    <p>Мы стимулируем трансформационные изменения в промышленных организациях с помощью инновационных решений и стратегического мышления.</p>
+                    <a href="/ru/industries/industrials.html" class="explore-btn">Исследовать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="footer-copyright">© 2026 New Era Advisory. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

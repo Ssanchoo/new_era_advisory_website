@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - New Era Advisory</title>
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/about.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="sub-header">
+        <div class="container">
+            <h1>О нашей компании</h1>
+        </div>
+    </section>
+
+    <section class="about-extra">
+        <div class="container">
+            <div class="row">
+                <div class="about-card">
+                    <h2>Наша история</h2>
+                    <p>New Era Advisory была основана с простой идеей — сделать технологии и стратегический консалтинг доступными и эффективными для каждого клиента в регионе...</p>
+                </div>
+                <div class="about-card">
+                    <h2>Миссия</h2>
+                    <p>Миссия New Era Advisory заключается в предоставлении уникальных знаний, инструментов и стратегий, которые помогают бизнесу расти в условиях меняющегося рынка.</p>
+                </div>
+                <div class="about-card">
+                    <h2>Наша команда</h2>
+                    <p>Сила New Era Advisory — в её людях. Мы объединяем экспертов из разных областей для решения самых сложных задач наших клиентов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <h4 style="color: #FFCC00;">О нас</h4>
+            <p>Развиваем бизнес и потенциал личности в цифровую эпоху.</p>
+            <p class="footer-copyright">© 2026 New Era Advisory. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

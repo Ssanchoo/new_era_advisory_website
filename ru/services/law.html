@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юридические услуги - New Era Advisory</title>
+    
+     <link rel="stylesheet" href="../../css/service-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/services/law.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="service-detail-header">
+            <h1>Юридические услуги</h1>
+            <p class="highlight-text">Мы предоставляем детальное руководство, необходимое для навигации в сложной правовой среде глобальной экономики.</p>
+        </section>
+
+        <section class="service-intro-content">
+            <p>Наши юристы разбираются в сложных налоговых, нормативных и коммерческих законах современной экономики. Благодаря нашему мультидисциплинарному подходу «единого окна», мы сокращаем разрыв между бизнес-консультантами и юристами, повышая эффективность и скорость работы при одновременном снижении затрат.</p>
+            <p>Наш подход, ориентированный на конкретные секторы экономики, позволяет предлагать интегрированные и надежные решения. Мы уделяем время тому, чтобы четко понять, что важно именно для вас. С централизованным управлением международными командами наши услуги помогут вашему бизнесу в любой точке мира.</p>
+        </section>
+
+        <section class="offerings-section">
+            <h2>Наши направления</h2>
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Корпоративное и коммерческое право</h3>
+                    <p>Наши команды помогают вам уверенно работать в различных юрисдикциях и оптимизировать текущие бизнес-операции.</p>
+                   
+                </div>
+                <div class="offering-card">
+                    <h3>Сопровождение сделок</h3>
+                    <p>Достигайте своих целей быстро и эффективно благодаря нашей специализированной юридической поддержке транзакций.</p>
+                    
+                </div>
+                <div class="offering-card">
+                    <h3>Трудовое право</h3>
+                    <p>Управление юридическими аспектами реструктуризации, передачи бизнеса и повседневных кадровых операций.</p>
+                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Цифровое право</h3>
+                    <p>Выявление рисков в области данных, кибербезопасности, цифровой интеллектуальной собственности и электронной коммерции.</p>
+                   
+                </div>
+                <div class="offering-card">
+                    <h3>Право в сфере финансовых услуг</h3>
+                    <p>Консультации по вопросам регулирования, управления рисками и комплаенса в различных юрисдикциях.</p>
+                   
+                </div>
+                <div class="offering-card">
+                    <h3>Управляемые юридические услуги</h3>
+                    <p>Решение вопросов контрактной деятельности, управления юридическими лицами и операционной деятельности в больших масштабах.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. Все права защищены.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

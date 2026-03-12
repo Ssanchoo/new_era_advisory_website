@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries - New Era Advisory</title>
+    <link rel="stylesheet" href="css/template3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <nav class="navbar">
+        <a href="index.html"><img src="images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown"><a href="/industries.html">Industries </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/industries/energy.html">Energy & Resources</a></li>
+                        <li><a href="/industries/government.html">Government & Infrastructure</a></li>
+                        <li><a href="/industries/industrials.html">Industrials & Mobility</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/services.html">Services</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/services/consulting.html">Consulting</a></li>
+                        <li><a href="/services/tax.html">Tax</a></li>
+                        <li><a href="/services/law.html">Law</a></li>
+                        <li><a href="/services/people_workforce.html">People & Workforce</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/ru/industries.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Industries</h1>
+                <p>We partner with organizations across sectors to drive innovation, sustainability, and growth through deep industry expertise.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <p>Since our founding, New Era Advisory has collaborated with clients from diverse industries — from energy and finance to healthcare and technology — helping them adapt to market shifts and accelerate transformation.</p>
+        </div>
+    </section>
+
+    <section class="industries">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <div class="cards">
+                <div class="card" id="energy">
+                    <h3>Energy & Resources</h3>
+                    <p>We help energy and resources organizations identify the right actions to accelerate the energy transition and realize significant commercial opportunities.</p>
+                    <a href="/industries/energy.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="card" id="financial">
+                    <h3>Government & Infrastructure</h3>
+                    <p>We work with governments and infrastructure providers to accelerate public value by harnessing people, money and technology.</p>
+                    <a href="/industries/government.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="card" id="technology">
+                    <h3>Industrials & Mobility</h3>
+                    <p>We drive transformative change for industrials organizations with innovative solutions and diverse thinking, fostering sustainable value and purposeful growth.</p>
+                    <a href="/industries/industrials.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="main-footer">
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. All rights reserved.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

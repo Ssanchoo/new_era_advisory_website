@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Services - New Era Advisory</title>
+    
+    <link rel="stylesheet" href="../css/template3.css">
+    <link rel="stylesheet" href="../css/service-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html"><img src="../images/logo2.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown"><a href="../industries.html">Industries</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../industries/energy.html">Energy & Resources</a></li>
+                        <li><a href="../industries/government.html">Government & Infrastructure</a></li>
+                        <li><a href="../industries/industrials.html">Industrials & Mobility</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="../services.html">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="consulting.html">Consulting</a></li>
+                        <li><a href="tax.html">Tax</a></li>
+                        <li><a href="law.html">Law</a></li>
+                        <li><a href="people_workforce.html">People & Workforce</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../ru/services/law.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="service-detail-header">
+            <h1>Law</h1>
+            <p class="highlight-text">We provide the detailed guidance you need to navigate the increasingly complex legal environment of the global economy.</p>
+        </section>
+
+        <section class="service-intro-content">
+            <p>Our lawyers understand the complex tax, regulatory and commercial laws of today’s economy. With our multidisciplinary, one-stop shop approach, we help reduce the gap between business advisors and legal counsel, increasing efficiency and speed to market, while reducing costs.</p>
+            
+            <p>
+                Serving you across borders, our sector-focused, multidisciplinary approach means we offer integrated and detailed advice you can trust.
+                <span id="dots">...</span>
+                <span id="moreText" style="display: none;">
+                    Throughout the service, we take time to understand clearly what matters to you. With centrally managed cross-border teams and single responsible country contacts, our controlled, efficient services can assist your business around the world.
+                </span>
+            </p>
+            
+        </section>
+
+        <section class="offerings-section">
+            <h2>Explore our offerings</h2>
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Corporate and commercial law</h3>
+                    <p>Our teams help you operate with confidence across jurisdictions and optimize today's business operations.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>Transaction law</h3>
+                    <p>Reach your goals quickly, efficiently and with added value through our specialized transaction support.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>Labor and employment law</h3>
+                    <p>Manage people-related legal aspects of restructuring, business transfers, and day-to-day operations.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Digital law</h3>
+                    <p>Identify risks in data, cyber, digital IP, regulatory law and e-commerce compliance.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>Financial services law</h3>
+                    <p>Advice on regulatory, risk management, and compliance issues across multiple jurisdictions.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>Legal Managed Services</h3>
+                    <p>Address contracting, regulatory compliance, entity governance and legal operations at scale.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copyright">© 2026 New Era Advisory. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+
+  
+    </script>
+</body>
+</html>

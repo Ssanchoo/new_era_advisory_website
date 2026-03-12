@@ -1,0 +1,119 @@
+/* --- 1. БАЗОВЫЕ НАСТРОЙКИ (Reset & Global) --- */
+body {
+    padding-top: 80px; 
+    background-color: #ffffff; /* Темный фон для премиального вида */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* --- 2. ТИПОГРАФИКА --- */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFCC00;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1c1e; /* Темный для карточек */
+    margin-bottom: 15px;
+}
+
+p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- 3. ШАПКА ИНДУСТРИИ (Hero Section) --- */
+.industry-detail-header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-subtext {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 60px;
+    border-left: 5px solid #FFCC00;
+    padding: 10px 0 10px 25px;
+}
+
+/* --- 4. КОНТЕНТ В ДВЕ КОЛОНКИ --- */
+.industry-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    color: #eeeeee;
+}
+
+/* --- 5. СЕТКА КАРТОЧЕК (Offerings) --- */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid transparent; /* Заготовка под ховер */
+}
+
+/* Эффект при наведении на карточку */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 204, 0, 0.2);
+    border-bottom: 4px solid #FFCC00;
+}
+
+.card h3 {
+    text-align: left; /* Исправил центрирование для карточек */
+}
+
+.card p {
+    color: #555555;
+    padding: 0; /* Убрал лишние падинги из твоего старого кода */
+}
+
+/* --- 6. АДАПТИВНОСТЬ --- */
+@media (max-width: 992px) {
+    .industry-intro-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    h1 { font-size: 38px; }
+}
+
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 40px 15px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - New Era Advisory</title>
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/services.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="hero-services">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Наши услуги</h1>
+                <p>Благодаря нашему опыту, инновациям и сотрудничеству мы помогаем клиентам трансформироваться, адаптироваться и уверенно расти в быстро меняющемся мире.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-intro">
+        <div class="container">
+            <p>В различных отраслях и регионах New Era Advisory предоставляет стратегические, консультационные, налоговые и технологические решения для поддержки пути трансформации наших клиентов. Наша команда сочетает глубокую экспертизу и цифровые возможности для обеспечения устойчивого роста и гибкости бизнеса.</p>
+        </div>
+    </section>
+
+    <section class="professional-services">
+        <div class="container">
+            <h2 class="section-title">Профессиональные услуги</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Консалтинг</h3>
+                    <p>Помогаем вам трансформировать бизнес и стабильно приносить пользу благодаря потенциалу людей, технологий и инноваций.</p>
+                    <a href="/ru/services/consulting.html" class="explore-btn">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <h3>Налоги</h3>
+                    <p>Предлагаем комплексные услуги по всем налоговым дисциплинам, чтобы помочь вам процветать в эпоху стремительных перемен.</p>
+                    <a href="/ru/services/tax.html" class="explore-btn">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <h3>Персонал и кадры</h3>
+                    <p>Помогаем раскрыть потенциал ваших сотрудников в рамках интегрированной бизнес-стратегии, создающей конкурентные преимущества.</p>
+                    <a href="/ru/services/people_workforce.html" class="explore-btn">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <h3>Право</h3>
+                    <p>Сокращаем разрыв между бизнес-консультантами и юрисконсультами, помогая вам ориентироваться в сложностях мировой экономики.</p>
+                    <a href="/ru/services/law.html" class="explore-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <section class="footer-about">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </section>
+            <section class="footer-copyright">
+                <p>&copy; 2026 New Era Advisory. Все права защищены.</p>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

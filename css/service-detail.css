@@ -1,0 +1,165 @@
+/* --- ОСНОВНЫЕ НАСТРОЙКИ КОНТЕНТА --- */
+body {
+    padding-top: 80px; /* Настройте это значение под высоту вашего навбара */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+/* Шапка страницы услуги */
+.service-detail-header {
+    margin-bottom: 50px;
+}
+
+.service-detail-header h1 {
+    font-size: 48px;
+    color: #FFCC00; /* Золотой акцент */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.highlight-text {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #000000;
+    max-width: 850px;
+    border-left: 4px solid #FFCC00;
+    padding-left: 25px;
+}
+
+/* --- СЕКЦИЯ С ТЕКСТОМ (2 КОЛОНКИ) --- */
+.service-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Разделение на лево и право */
+    gap: 50px;
+    margin-bottom: 80px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Service Detail (integrated from service-detail.css) */
+.service-content {
+    padding: 80px 0;
+    background: #FFF;
+    color: #000000;
+    text-align: center;
+}
+
+.service-content ul {
+    max-width: 600px;
+    margin: 2rem auto;
+    list-style: none;
+    padding: 0;
+}
+
+.service-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.service-content i {
+    color: #FFCC00;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    width: 20px;
+}
+
+/* --- СЕКЦИЯ КАРТОЧЕК (OFFERINGS) --- */
+.offerings-section {
+    padding-top: 40px;
+}
+
+.offerings-section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+/* Сетка карточек 3 в ряд */    
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Сама карточка */
+.offering-card {
+    background: #ffffff; /* Контрастный белый фон */
+    padding: 40px 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.offering-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 204, 0, 0.3); /* Золотое свечение */
+}
+
+.offering-card h3 {
+    color: #1a1c1e; /* Темный текст на белом фоне */
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Декоративная линия под заголовком карточки */
+.offering-card h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFCC00;
+    margin-top: 10px;
+}
+
+.offering-card p {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- АДАПТИВНОСТЬ (Responsive) --- */
+
+/* Планшеты: 2 колонки в карточках */
+@media (max-width: 1024px) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Смартфоны: всё в одну колонку */
+@media (max-width: 768px) {
+    .service-detail-header h1 { font-size: 36px; }
+    
+    .service-intro-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .row {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 40px 15px;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - New Era Advisory</title>
+    <link rel="stylesheet" href="css/template3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown"><a href="/industries.html">Industries</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/industries/energy.html">Energy & Resources</a></li>
+                        <li><a href="/industries/government.html">Government & Infrastructure</a></li>
+                        <li><a href="/industries/industrials.html">Industrials & Mobility</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/services.html">Services</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/services/consulting.html">Consulting</a></li>
+                        <li><a href="/services/tax.html">Tax</a></li>
+                        <li><a href="/services/law.html">Law</a></li>
+                        <li><a href="/services/people_workforce.html">People & Workforce</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/ru/services.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="hero-services">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Services</h1>
+                <p>Through our expertise, innovation, and collaboration, we help clients transform, adapt, and grow confidently in a rapidly changing world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-intro">
+        <div class="container">
+            <p>Across industries and regions, New Era Advisory provides strategic, consulting, tax, and technology solutions to support our clients’ transformation journeys. 
+               Our teams combine deep expertise and digital capabilities to build sustainable growth and resilience.</p>
+        </div>
+    </section>
+
+    <section class="professional-services">
+        <div class="container">
+            <h2 class="section-title">Professional Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Consulting</h3>
+                    <p>Helping you transform your business and consistently delivering value through the power of people, technology and innovation.</p>
+                    <a href="services/consulting.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <h3>Tax</h3>
+                    <p>Offering connected services across all tax disciplines to help you thrive in an era of rapid change.</p>
+                    <a href="services/tax.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <h3>People and Workforce</h3>
+                    <p>Helping you unleash the potential of your people as part of an integrated business strategy that creates competitive advantage.</p>
+                    <a href="services/people_workforce.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="service-card">
+                    <h3>Law</h3>
+                    <p>Reducing the gap between business advisors and legal counsel to help you navigate the complexities of the global economy.</p>
+                    <a href="services/law.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="main-footer">
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. All rights reserved.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

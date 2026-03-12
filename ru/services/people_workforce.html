@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонал и кадры - New Era Advisory</title>
+    
+     <link rel="stylesheet" href="../../css/service-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/services/people_workforce.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="service-detail-header">
+            <h1>Персонал и кадры</h1>
+            <p class="highlight-text">Вы меняете своих людей или меняете то, как они работают?</p>
+        </section>
+
+        <section class="service-intro-content">
+            <p>В условиях глобальных перемен организациям необходимо стать гораздо более адаптивными, а их сотрудникам — гибкими и инициативными. Сегодня становится всё сложнее находить, управлять, мотивировать и удерживать таланты, одновременно контролируя расходы.</p>
+            <p>Профессионалы NEA по кадровому консультированию помогут вам эффективно интегрировать управление персоналом в общую бизнес-стратегию. Это обеспечит конкурентное преимущество: нужные люди с правильными навыками будут находиться в нужном месте и выполнять задачи с максимальной отдачей.</p>
+        </section>
+
+        <section class="offerings-section">
+            <h2>Наши направления</h2>
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Трансформация кадрового потенциала</h3>
+                    <p>Проектирование будущих операционных моделей, организационных структур и планирование рабочей силы.</p>
+                    
+                </div>
+                <div class="offering-card">
+                    <h3>Опыт сотрудников и культура</h3>
+                    <p>Повышение вовлеченности, формирование корпоративной культуры и улучшение опыта сотрудников для роста производительности.</p>
+                   
+                </div>
+                <div class="offering-card">
+                    <h3>Трансформация HR-функции</h3>
+                    <p>Модернизация HR-отделов, внедрение новых технологий и оптимизация критически важных процессов.</p>
+                   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Глобальная мобильность</h3>
+                    <p>Управление вопросами налогообложения, иммиграции и соблюдения законодательства для сотрудников, работающих за рубежом.</p>
+                    
+                </div>
+                <div class="offering-card">
+                    <h3>Компенсации и льготы</h3>
+                    <p>Разработка эффективных стратегий вознаграждения, систем управления эффективностью и планов выплат для руководства.</p>
+                    
+                </div>
+                <div class="offering-card">
+                    <h3>Обучение и развитие</h3>
+                    <p>Создание корпоративных программ обучения и цифровых решений для повышения квалификации сотрудников в эпоху перемен.</p>
+                   
+                </div>
+            </div>
+        </section>
+    </div>
+
+   <footer class="main-footer">
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. Все права защищены.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

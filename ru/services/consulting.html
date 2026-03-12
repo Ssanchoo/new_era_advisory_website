@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Консалтинг - New Era Advisory</title>
+
+     <link rel="stylesheet" href="../../css/service-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/services/consulting.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="service-detail-header">
+            <h1>Консалтинг</h1>
+            <p class="highlight-text">Консалтинг в NEA — это построение лучшего мира бизнеса через трансформацию с помощью людей, технологий и инноваций.</p>
+        </section>
+
+        <section class="service-content">
+            <p>Природа работы быстро меняется: от всех нас требуют новых моделей поведения — быть более инновационными, гибкими и готовыми к сотрудничеству.</p>
+            <p>Бизнес сегодня далек от привычного. Настало время взглянуть в будущее через новую призму и задать иные вопросы:</p>
+            
+            <ul class="questions-list">
+                <li>Как создать близость с клиентом без физического присутствия?</li>
+                <li>Где человекоцентричность встречается с будущим работы?</li>
+                <li>Как технологии могут создать конкурентное преимущество в кратчайшие сроки?</li>
+                <li>Как масштабировать инновации для нового витка роста?</li>
+            </ul>
+
+            <p>Ставя человека в центр, быстро внедряя технологии и масштабируя инновации, наши клиенты трансформируются для реализации долгосрочной ценности для бизнеса и общества в целом.</p>
+        </section>
+
+        <section class="offerings">
+            <h2>Наши направления</h2>
+            <div class="row">
+                <div class="offering-card">
+                    <h3>Бизнес-трансформация</h3>
+                    <p>Проведение изменений в масштабе всего предприятия, основанных на стратегии и редизайне процессов.</p>
+                    
+                </div>
+
+                <div class="offering-card">
+                    <h3>Технологический консалтинг</h3>
+                    <p>Консультирование по вопросам цифровой трансформации, облачных решений, аналитики данных и новых технологий (ИИ, блокчейн).</p>
+                    
+                </div>
+
+                <div class="offering-card">
+                    <h3>Управление персоналом и изменениями</h3>
+                    <p>Управление человеческим фактором трансформации, включая культуру и опыт сотрудников.</p>
+                    
+                </div>
+
+                <div class="offering-card">
+                    <h3>Управление рисками</h3>
+                    <p>Помощь клиентам в управлении стратегическими, финансовыми и операционными рисками предприятия.</p>
+                    
+                </div>
+
+                <div class="offering-card">
+                    <h3>Консалтинг в финансовых услугах</h3>
+                    <p>Глубокая отраслевая экспертиза для банковского сектора, страхования и управления активами.</p>
+                    
+                </div>
+
+                <div class="offering-card">
+                    <h3>Цепочки поставок и операции</h3>
+                    <p>Оптимизация сквозных цепочек создания стоимости, закупок, производства и распределения.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+    <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2026 New Era Advisory. Все права защищены.
+    </p>
+</footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

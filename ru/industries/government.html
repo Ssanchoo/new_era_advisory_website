@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Госсектор и инфраструктура - New Era Advisory</title>
+    
+    <link rel="stylesheet" href="../../css/industry-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О нас</a></li>
+                <li class="dropdown"><a href="/ru/industries.html">Индустрии </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/ru/services.html">Услуги </i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li><a href="/industries/government.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="industry-detail-header">
+            <h1>Госсектор и инфраструктура</h1>
+            <p class="hero-subtext">Создание лучшего мира для правительств и граждан.</p>
+        </section>
+
+        <div class="industry-intro-content">
+            <div>
+                <p>В современном мире люди общаются, организуются и требуют перемен быстрее, чем когда-либо. Цифровые технологии формируют новые модели поведения граждан. Это ставит новые задачи перед государством. Только цифровые инструменты обладают необходимым охватом и эффективностью для успеха в современных реалиях.</p>
+            </div>
+            <div>
+                <p>В NEA мы помогаем правительствам внедрять цифровые технологии для создания новых методов работы. Наши возможности помогают государству совершенствоваться в сфере клиентского опыта, оптимизации инвестиций и безопасности граждан.</p>
+            </div>
+        </div>
+
+        <section class="how-we-help">
+            <h2>Как мы помогаем</h2>
+            <div class="row">
+                <div class="card">
+                    <h3>Стратегический консалтинг</h3>
+                    <p>Команды NEA-Parthenon помогают должностным лицам принимать более эффективные решения для достижения целей.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Услуги для госорганов</h3>
+                    <p>Наше сообщество объединяет более 20 000 специалистов NEA из более чем 100 стран для поддержки вашей миссии.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Цифровое правительство</h3>
+                    <p>Помогаем трансформировать цифровой подход для улучшения взаимодействия с гражданами и эффективности работы.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Международное развитие</h3>
+                    <p>Наши профессионалы помогают реализовывать проекты развития для достижения наилучших социальных результатов.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Блокчейн для финансов</h3>
+                    <p>Решение NEA OpsChain помогает государственным органам расходовать бюджетные средства более прозрачно.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Сфера образования</h3>
+                    <p>Специализированные команды помогают обеспечивать качество образования и оптимизировать институциональные процессы.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copyright">
+            © 2026 New Era Advisory. Все права защищены.
+        </p>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>
