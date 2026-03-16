@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务 - New Era Advisory</title>
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/cn/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/cn/index.html">首页</a></li>
+                <li><a href="/cn/about.html">关于我们</a></li>
+                <li class="dropdown"><a href="/cn/industries.html"> 行业</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/industries/energy.html">能源与资源</a></li>
+                        <li><a href="/cn/industries/government.html">公共部门与基础设施</a></li>
+                        <li><a href="/cn/industries/industrials.html">工业与出行</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/cn/services.html">服务</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/services/consulting.html">咨询服务</a></li>
+                        <li><a href="/cn/services/tax.html">税务</a></li>
+                        <li><a href="/cn/services/law.html">法律服务</a></li>
+                        <li><a href="/cn/services/people_workforce.html">人力资源</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="/cn/contact.html">联系我们</a></li>
+                <li><a href="/services.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+                <li><a href="/ru/services.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="hero-services">
+        <div class="container">
+            <div class="hero-text">
+                <h1>我们的服务</h1>
+                <p>凭借我们的经验、创新与合作，我们帮助客户在快速变化的世界中实现转型、适应并稳健成长。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-intro">
+        <div class="container">
+            <p>在各个行业和地区，New Era Advisory 提供战略、咨询、税务、法律以及人力资源解决方案，支持客户的转型之路。我们的团队结合深厚的专业知识与数字化能力，确保业务实现可持续增长与灵活发展。</p>
+        </div>
+    </section>
+
+    <section class="professional-services">
+        <div class="container">
+            <h2 class="section-title">专业服务</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>咨询服务</h3>
+                    <p>我们帮助您实现业务转型，并通过人力、技术与创新的潜力持续创造价值。</p>
+                    <a href="/cn/services/consulting.html" class="explore-btn">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <h3>税务</h3>
+                    <p>我们提供全面的税务服务，帮助您在快速变化的时代实现繁荣发展。</p>
+                    <a href="/cn/services/tax.html" class="explore-btn">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <h3>人力资源</h3>
+                    <p>我们帮助您在集成的业务战略中发挥员工的潜力，创造竞争优势。</p>
+                    <a href="/cn/services/people_workforce.html" class="explore-btn">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <h3>法律服务</h3>
+                    <p>我们通过减少商业顾问与法律顾问之间的差距，帮助您在复杂的全球经济环境中找到方向。</p>
+                    <a href="/cn/services/law.html" class="explore-btn">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <section class="footer-about">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </section>
+            <section class="footer-copyright">
+                <p>&copy; © 2026 New Era Advisory。保留所有权利。</p>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

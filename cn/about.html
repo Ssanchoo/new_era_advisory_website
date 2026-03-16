@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - New Era Advisory</title>
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/cn/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/cn/index.html">首页</a></li>
+                <li><a href="/cn/about.html">关于我们</a></li>
+                <li class="dropdown"><a href="/cn/industries.html">行业</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/industries/energy.html">能源与资源</a></li>
+                        <li><a href="/cn/industries/government.html">公共部门与基础设施</a></li>
+                        <li><a href="/cn/industries/industrials.html">工业与出行</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/cn/services.html">服务</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/services/consulting.html">咨询服务</a></li>
+                        <li><a href="/cn/services/tax.html">税务</a></li>
+                        <li><a href="/cn/services/law.html">法律服务</a></li>
+                        <li><a href="/cn/services/people_workforce.html">人力资源</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cn/contact.html">联系我们</a></li>
+                <li><a href="/about.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+                <li><a href="/ru/about.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="sub-header">
+        <div class="container">
+            <h1>关于我们公司</h1>
+        </div>
+    </section>
+
+    <section class="about-extra">
+        <div class="container">
+            <div class="row">
+                <div class="about-card">
+                    <h2>我们的历史</h2>
+                    <p>New Era Advisory 的成立源于一个简单的理念——让技术和战略咨询服务在本地区对每位客户都变得可获取且高效。</p>
+                </div>
+                <div class="about-card">
+                    <h2>使命</h2>
+                    <p>New Era Advisory 的使命在于提供独特的知识、工具和战略，帮助企业在不断变化的市场环境中实现增长。</p>
+                </div>
+                <div class="about-card">
+                    <h2>我们的团队</h2>
+                    <p>New Era Advisory 的力量在于其员工。我们汇聚来自各个领域的专家，共同解决客户最复杂的问题。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <h4 style="color: #FFCC00;">关于我们</h4>
+            <p>在数字时代，我们推动企业发展并挖掘个人潜力。</p>
+            <p class="footer-copyright">© 2026 New Era Advisory。保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工业与出行 - New Era Advisory</title>
+    
+    <link rel="stylesheet" href="../../css/industry-detail.css">
+    <link rel="stylesheet" href="../../css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/cn/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/cn/index.html">首页</a></li>
+                <li><a href="/cn/about.html">关于我们</a></li>
+                <li class="dropdown"><a href="/cn/industries.html">行业</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/industries/energy.html">能源与资源</a></li>
+                        <li><a href="/cn/industries/government.html">公共部门与基础设施</a></li>
+                        <li><a href="/cn/industries/industrials.html">工业与出行</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/cn/services.html">服务</i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/services/consulting.html">咨询服务</a></li>
+                        <li><a href="/cn/services/tax.html">税务</a></li>
+                        <li><a href="/cn/services/law.html">法律服务</a></li>
+                        <li><a href="/cn/services/people_workforce.html">人力资源</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cn/contact.html">联系我们</a></li>
+                <li><a href="/industries/industrials.html" style="color: #FFCC00; font-weight: bold;">EN</a></li>
+                <li><a href="/ru/industries/industrials.html" style="color: #FFCC00; font-weight: bold;">RU</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <section class="industry-detail-header">
+            <h1>工业与出行</h1>
+            <p class="hero-subtext">生产厂商必须发展业务模式，通过数字化无缝集成产品并以客户为中心。</p>
+        </section>
+
+        <section class="main-content">
+            <p>在工业部门根本性变化的浪潮中，公司正在开发创新的业务模式，以适应不断变化的需求。数字化迫使生产厂商重新思考其供应链，以充分利用单一生态系统的优势并提高运营效率。</p>
+            <p>行业的变化为化工、航空航天和国防工业创造了“多米诺效应”；风险影响整个企业，并可能限制技术集成。</p>
+            <p>NEA的团队采用综合方法，帮助您利用数字技术的潜力，以加速生产力、优化投资组合并制定清晰的“智能”生产路线图。</p>
+        </section>
+
+        <section class="offerings-grid">
+            <h2>我们如何提供帮助</h2>
+            <div class="row">
+                <div class="card">
+                    <h3>重新思考供应链</h3>
+                    <p>帮助客户从根本上改变效率指标，以支持销售增长。</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>网络架构与工程</h3>
+                    <p>了解 NEA 的服务如何在网络安全各个领域保护您的业务。</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>咨询服务在3D打印中</h3>
+                    <p>开发具有传统方法难以实现的规格的产品。</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <h3>人力分析</h3>
+                    <p>实施分析系统，用于日常行动规划、报告以及预测数据。</p>
+                   
+                </div>
+                <div class="card">
+                        <h3>资产剥离战略</h3>
+                        <p>我们的资产剥离服务可帮助管理投资组合，以提升企业价值。</p>
+                    
+                </div>
+                <div class="card">
+                    <h3>数字工厂</h3>
+                    <p>引入 IoT、AI 和 “智能” 工厂技术以改善生产监控。</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <section class="footer-copyright">
+                <p>&copy; © 2026 New Era Advisory。保留所有权利。</p>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-250px"; }
+    </script>
+</body>
+</html>
