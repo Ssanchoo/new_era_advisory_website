@@ -74,6 +74,24 @@ p {
     margin-top: 40px;
 }
 
+/* Добавь это в раздел карточек */
+.card .icon {
+    font-size: 25px;      /* Размер иконки */
+    color: #FFCC00;       /* Золотой цвет под твой h1 */
+    margin-bottom: 20px;  /* Отступ от заголовка */
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Иконка немного увеличивается при наведении на карточку */
+.card:hover .icon {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    text-align: left; 
+    margin-top: 0; /* Убираем лишний отступ сверху */
+}
 .card {
     background: #ffffff;
     padding: 40px 30px;

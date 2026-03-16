@@ -6,9 +6,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
-    color: #ffffff;
+    color: #000000;
+}
+.highlight-text {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* Центрируем и даем отступ снизу */
+    text-align: center;
 }
 
+.service-detail-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9; /* Легкий фон, чтобы отделить шапку от контента */
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
 /* Шапка страницы услуги */
 .service-detail-header {
     margin-bottom: 50px;
@@ -79,6 +95,42 @@ body {
 /* --- СЕКЦИЯ КАРТОЧЕК (OFFERINGS) --- */
 .offerings-section {
     padding-top: 40px;
+}
+
+/* Стили для карточек предложений */
+.offering-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Легкая тень */
+    transition: all 0.3s ease;
+    border-top: 3px solid transparent;
+    text-align: left;
+}
+
+.offering-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 204, 0, 0.15);
+    border-top: 3px solid #FFCC00; /* Золотая линия при наведении */
+}
+
+.offering-card i {
+    font-size: 32px;
+    color: #FFCC00;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.offering-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1a1c1e;
+}
+
+.offering-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
 }
 
 .offerings-section h2 {
@@ -163,3 +215,4 @@ body {
         padding: 40px 15px;
     }
 }
+
