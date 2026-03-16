@@ -138,9 +138,9 @@
     color: #FFCC00;
 }
 
-/* ====== Desktop layout ====== */
-@media (min-width: 769px) {
-   .fa-bars, .fa-times {
+/* ====== Desktop layout (Для компьютеров) ====== */
+@media (min-width: 1025px) { /* Увеличили порог, чтобы меню не ломалось раньше времени */
+    .fa-bars, .fa-times {
         display: none !important;
     }
 
@@ -149,71 +149,84 @@
         width: auto;
         height: auto;
         background: transparent;
-        flex-direction: row;
-        padding: 0;
-        box-shadow: none;
         display: block;
-        margin-right: 250px;
+        margin-right: 15%; /* Заменили 250px на проценты, чтобы меню не улетало при зуме */
+        box-shadow: none;
+        padding: 0;
     }
 
     .nav-links ul {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 30px;
+        gap: clamp(10px, 2vw, 30px); /* Гибкий зазор: сам уменьшится при зуме */
+        list-style: none;
     }
 
     .nav-links li {
         border-bottom: none;
     }
-    .nav-links ul li a {
-    white-space: nowrap; /* Текст больше не будет переноситься */
-    display: block;
-    padding: 10px 15px;
-    }
+
     .nav-links a {
+        white-space: nowrap;
         padding: 10px 5px;
         font-size: 15px;
     }
 
-    /* Выпадающее меню на десктопе "парит" под кнопкой */
+    /* Исправляем выпадашку (убираем !important из общей секции) */
     .dropdown-content {
+        display: none; 
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 100%;
         left: 0;
+        background: #111;
         width: 240px;
-        padding: 10px 0;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        border-top: 2px solid #FFCC00;
-        border-radius: 0 0 6px 6px;
+        transition: 0.3s;
     }
 
-    .dropdown-content a {
-        padding: 10px 20px;
-        font-size: 14px;
+    .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 }
 
-/* ====== Mobile view ====== */
-@media (max-width: 768px) {
-    .nav-links.active {
-        right: 0 !important;
+/* ====== Mobile & Tablet view (Бургер включается раньше) ====== */
+@media (max-width: 1024px) {
+    .fa-bars {
+        display: block !important;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
 
-    .fa-bars {
-        display: block;
+    .nav-links {
+        /* Твои стили для мобильного меню */
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        right: 0;
     }
 
     .dropdown-content {
         position: static;
+        display: block; /* В мобильном меню лучше сразу видеть подразделы */
+        opacity: 1;
+        visibility: visible;
+        background: transparent;
         box-shadow: none;
-        border-top: none;
-        width: 100%;
-        border-radius: 0;
-        opacity: 1 !important; /* Видно в мобильке */
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block !important;
+        padding-left: 20px;
     }
 }
 
