@@ -203,31 +203,42 @@
     }
 
     .nav-links {
-        /* Твои стили для мобильного меню */
-        position: fixed;
-        right: -100%;
-        top: 0;
-        width: 80%;
-        height: 100vh;
-        background: #000;
-        display: flex;
-        flex-direction: column;
-        transition: 0.4s;
-    }
+    position: fixed;
+    right: -200px; /* Исходное положение */
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: #000;
+    z-index: 1000;
+    transition: 0.5s;
+    padding-top: 50px;
+}
 
-    .nav-links.active {
-        right: 0;
-    }
+/* 2. Делаем пункты меню читабельными на RU/CH */
+.nav-links ul {
+    display: flex;
+    flex-direction: column; /* Пункты строго друг под другом */
+    padding: 20px;
+    gap: 15px; /* Зазор между кнопками */
+}
 
-    .dropdown-content {
-        position: static;
-        display: block; /* В мобильном меню лучше сразу видеть подразделы */
-        opacity: 1;
-        visibility: visible;
-        background: transparent;
-        box-shadow: none;
-        padding-left: 20px;
-    }
+.nav-links ul li {
+    list-style: none;
+    width: 100%; /* Занимают всю ширину меню */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    white-space: nowrap; /* ЗАПРЕТ разрыва слов вроде "О нас" */
+}
+
+/* 3. Фикс для того, чтобы меню не перекрывало всё на свете */
+.nav-links.active {
+    right: 0; /* Когда меню открыто */
+}
 }
 
 /* ---------- HEADER SECTION (Hero) ---------- */
