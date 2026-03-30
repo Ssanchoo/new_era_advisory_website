@@ -430,6 +430,16 @@
     color: #444;
 }
 
+.explore-btn {
+    color: #000000; /* золотой */
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    color: #000; /* при наведении */
+}
 /* Footer CTA */
 .cta-footer {
     margin-top: 70px;
