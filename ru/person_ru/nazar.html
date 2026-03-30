@@ -1,0 +1,121 @@
+Вот готовый код для русской версии страницы Назара. Я интегрировал твой Navbar, перевел контент и адаптировал терминологию под деловой стандарт Казахстана.
+
+Nazar Terlyga — Russian Version (nazar-ru.html)
+HTML
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назар Терлыга | Профиль руководителя | NEA</title>
+    
+    <link rel="stylesheet" href="/css/person.css">
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Основная навигация">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Закрыть меню"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О компании</a></li>
+                <li class="dropdown">
+                    <a href="/ru/industries.html">Отрасли</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор и инфраструктура</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность и транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/ru/services.html">Услуги</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li class="dropdown lang-dropdown">
+                    <a href="#" class="lang-current">
+                        RU <i class="fa fa-globe" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/person/nazar.html">English (EN)</a></li>
+                        <li><a href="/cn/person_cn/nazar.html">Chinese (ZH)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Открыть меню"></i>
+    </nav>
+
+    <section class="service-detail-header">
+        <div class="header-content">
+            <h1>Назар Терлыга</h1>
+            <p class="highlight-text">Управляющий директор</p>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-flex">
+            
+            <div class="profile-sidebar">
+                <div class="member-image-large" style="background-image: url('/images/ceo.PNG');"></div>
+                <div class="sidebar-info">
+                    <p><strong>Локация:</strong> <br>Алматы / Гонконг</p>
+                    <p><strong>Опыт в отрасли:</strong> <br>12+ лет</p>
+                    <p><strong>Награды:</strong> <br>Медаль «Ерен еңбегі үшін» (2023)</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <h3>Профессиональный профиль</h3>
+                <p>Назар — эксперт международного уровня в области стратегического управления инвестиционными проектами в горно-металлургическом секторе. Он сыграл ключевую роль в запуске крупнейшего проекта по переработке вольфрамовых руд на месторождении Богутинское, успешно выстроив взаимодействие с Правительством Республики Казахстан и международными инвесторами.</p>
+                
+                <h3 class="section-title">Ключевые достижения</h3>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-chart-line"></i> Подготовка к выходу на IPO (Гонконгская и Астанинская фондовые биржи)</li>
+                    <li><i class="fas fa-handshake"></i> Привлечение крупных иностранных инвестиций (Jiaxin Copper Corp)</li>
+                    <li><i class="fas fa-globe"></i> Экс-советник по экономическим вопросам в ВТО (Женева)</li>
+                </ul>
+
+                <h3 class="section-title">Профессиональный опыт</h3>
+                <div class="career-item">
+                    <strong>2017 – настоящее время</strong>
+                    <p>Вице-президент, Jiaxin International Resources Investments (Гонконг)</p>
+                </div>
+                <div class="career-item">
+                    <strong>2017 – настоящее время</strong>
+                    <p>Исполнительный директор, ТОО «Жетiсу Вольфрамы»</p>
+                </div>
+                <div class="career-item">
+                    <strong>2008 – 2012</strong>
+                    <p>Советник по экономическим вопросам, Всемирная торговая организация (Женева, Швейцария)</p>
+                </div>
+
+                <h3 class="section-title">Образование</h3>
+                <p>КРСУ им. Б.Н. Ельцина, диплом с отличием.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-280px";
+        }
+    </script>
+</body>
+</html>

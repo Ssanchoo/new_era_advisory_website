@@ -1,0 +1,129 @@
+/* Общие настройки страницы */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Или #000, если хочешь темный фон */
+}
+
+/* Центрирование заголовка */
+.service-detail-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffffff; /* Темный фон как на твоем сайте */
+    color: #000000;
+}
+
+.highlight-text {
+    color: #FFCC00;
+    font-weight: 500;
+}
+
+/* Главный контейнер - СЕКРЕТ ЦЕНТРИРОВАНИЯ */
+.profile-container {
+    max-width: 1140px; /* Ограничение ширины */
+    margin: 0 auto;    /* Центрирование блока */
+    padding: 60px 20px;
+}
+
+.profile-flex {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Левая колонка */
+.profile-sidebar {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+.member-image-large {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 4px solid #FFCC00;
+    margin: 0 auto 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar-info p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.social-links a {
+    color: #FFCC00;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+/* Правая колонка */
+.profile-main {
+    flex: 2;
+    border-left: 2px solid #FFCC00;
+    padding-left: 45px;
+}
+
+.section-title {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.achievements-list i {
+    color: #FFCC00;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.career-item {
+    margin-bottom: 15px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 992px) {
+    .profile-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-main {
+        border-left: none;
+        border-top: 2px solid #FFCC00;
+        padding-left: 0;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .achievements-list li {
+        justify-content: center;
+    }
+}
+
+/* Исправление твоего меню (чтобы не торчало) */
+@media (max-width: 1024px) {
+    .nav-links {
+        width: 280px !important;
+        right: -280px !important; 
+        position: fixed;
+        transition: 0.5s;
+    }
+    .nav-links.active {
+        right: 0 !important;
+    }
+}

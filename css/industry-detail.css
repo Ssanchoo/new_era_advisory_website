@@ -1,137 +1,169 @@
-/* --- 1. БАЗОВЫЕ НАСТРОЙКИ (Reset & Global) --- */
+/* --- GLOBAL RESET & BODY --- */
 body {
-    padding-top: 80px; 
-    background-color: #ffffff; /* Темный фон для премиального вида */
     margin: 0;
+    padding-top: 80px;
     font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+    color: #1a1c1e;
 }
 
+/* --- CONTAINER --- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
 }
 
-/* --- 2. ТИПОГРАФИКА --- */
+/* --- TYPOGRAPHY --- */
 h1 {
     font-size: 48px;
     font-weight: 700;
     color: #FFCC00;
     margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1a1c1e; /* Темный для карточек */
-    margin-bottom: 15px;
-}
-
-p {
-    color: #000000;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
-    margin: 0;
-}
-
-/* --- 3. ШАПКА ИНДУСТРИИ (Hero Section) --- */
-.industry-detail-header h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.hero-subtext {
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1c1e;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1c1e;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- HERO SECTION --- */
+.industry-detail-header, .service-detail-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.hero-subtext, .highlight-text {
     font-size: 20px;
     line-height: 1.6;
-    color: #000000;
-    margin-bottom: 60px;
+    color: #1a1c1e;
     border-left: 5px solid #FFCC00;
-    padding: 10px 0 10px 25px;
+    padding-left: 25px;
+    margin-bottom: 60px;
 }
 
-/* --- 4. КОНТЕНТ В ДВЕ КОЛОНКИ --- */
-.industry-intro-content {
+/* --- 2 COLUMN LAYOUT --- */
+.industry-intro-content, .service-intro-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 50px;
     margin-bottom: 80px;
-    color: #eeeeee;
 }
 
-/* --- 5. СЕТКА КАРТОЧЕК (Offerings) --- */
+/* --- OFFERING CARDS --- */
 .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-/* Добавь это в раздел карточек */
-.card .icon {
-    font-size: 25px;      /* Размер иконки */
-    color: #FFCC00;       /* Золотой цвет под твой h1 */
-    margin-bottom: 20px;  /* Отступ от заголовка */
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-/* Иконка немного увеличивается при наведении на карточку */
-.card:hover .icon {
-    transform: scale(1.1);
-}
-
-.card h3 {
-    text-align: left; 
-    margin-top: 0; /* Убираем лишний отступ сверху */
-}
-.card {
+.card, .offering-card {
     background: #ffffff;
     padding: 40px 30px;
     border-radius: 15px;
-    color: #333;
-    transition: all 0.3s ease-in-out;
-    border-bottom: 4px solid transparent; /* Заготовка под ховер */
+    transition: all 0.4s ease;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s forwards;
 }
 
-/* Эффект при наведении на карточку */
-.card:hover {
+.card:hover, .offering-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(255, 204, 0, 0.2);
     border-bottom: 4px solid #FFCC00;
+    cursor: pointer;
 }
 
-.card h3 {
-    text-align: left; /* Исправил центрирование для карточек */
+.card .icon, .offering-card i {
+    font-size: 25px;
+    color: #FFCC00;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-.card p {
+.card:hover .icon, .offering-card:hover i {
+    transform: scale(1.1);
+}
+
+.card p, .offering-card p {
     color: #555555;
-    padding: 0; /* Убрал лишние падинги из твоего старого кода */
+    font-size: 15px;
+    line-height: 1.6;
 }
 
-/* --- 6. АДАПТИВНОСТЬ --- */
-@media (max-width: 992px) {
-    .industry-intro-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    h1 { font-size: 38px; }
+/* --- DECORATIVE LINES --- */
+.offering-card h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFCC00;
+    margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-    .row {
-        grid-template-columns: 1fr;
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .row { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    .industry-intro-content, .service-intro-content { grid-template-columns: 1fr; gap: 20px; }
+    .row { grid-template-columns: 1fr; }
+    .container { padding: 40px 15px; }
+}
+
+/* --- ANIMATION --- */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .container {
-        padding: 40px 15px;
-    }
+}
+
+/* --- SERVICE LIST --- */
+.service-content ul {
+    max-width: 600px;
+    margin: 2rem auto;
+    list-style: none;
+    padding: 0;
+}
+
+.service-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.service-content i {
+    color: #FFCC00;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    width: 20px;
 }

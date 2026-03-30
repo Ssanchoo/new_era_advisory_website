@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Султан Калиев | Директор по развитию | NEA</title>
+    
+    <link rel="stylesheet" href="/css/person.css">
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Основная навигация">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Закрыть меню"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О компании</a></li>
+                <li class="dropdown">
+                    <a href="/ru/industries.html">Отрасли</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор и инфраструктура</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность и транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/ru/services.html">Услуги</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li class="dropdown lang-dropdown">
+                    <a href="#" class="lang-current">
+                        RU <i class="fa fa-globe" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/person/sultan.html">English (EN)</a></li>
+                        <li><a href="/cn/person_cn/sultan.html">Chinese (ZH)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Открыть меню"></i>
+    </nav>
+
+    <section class="service-detail-header">
+        <div class="header-content">
+            <h1>Султан Калиев</h1>
+            <p class="highlight-text">Директор по развитию</p>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-flex">
+            
+            <div class="profile-sidebar">
+                <div class="member-image-large" style="background-image: url('/images/man.png');"></div>
+                <div class="sidebar-info">
+                    <p><strong>Специализация:</strong> <br>GR и корпоративные коммуникации</p>
+                    <p><strong>Опыт в отрасли:</strong> <br>10 лет</p>
+                    <p><strong>Локация:</strong> <br>Алматы, Казахстан</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <h3>Профессиональный профиль</h3>
+                <p>Султан Калиев — признанный эксперт в области взаимодействия с государственными органами (GR), обладающий глубокими знаниями в геологических науках. Работая в проекте по добыче вольфрама на месторождении Богутинское с момента его основания, он детально понимает как технические вызовы, так и регуляторную среду горнодобывающего сектора Казахстана.</p>
+                
+                <h3 class="section-title">Ключевые компетенции</h3>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-landmark"></i> Стратегическое взаимодействие с государственными органами и регуляторами РК.</li>
+                    <li><i class="fas fa-users"></i> Управление связями с общественностью и работа со стейкхолдерами крупных промышленных активов.</li>
+                    <li><i class="fas fa-balance-scale"></i> Сопровождение вопросов законодательства о недропользовании и экологического соответствия.</li>
+                </ul>
+
+                <h3 class="section-title">Профессиональный путь</h3>
+                <div class="career-item">
+                    <strong>2017 – настоящее время</strong>
+                    <p>Директор по связям с государственными органами и общественностью, ТОО «Жетісу Вольфрамы»</p>
+                </div>
+                <div class="career-item">
+                    <strong>Ключевой этап</strong>
+                    <p>Геолог проекта, ТОО «Жетісу Вольфрамы» (член команды основателей крупнейшего инвестиционного проекта по добыче вольфрама)</p>
+                </div>
+                <div class="career-item">
+                    <strong>2016</strong>
+                    <p>Специалист, ТОО «Каззарубежгеология»</p>
+                </div>
+
+                <h3 class="section-title">Образование</h3>
+                <div class="career-item">
+                    <p><strong>Магистратура:</strong> Геология и разведка месторождений полезных ископаемых (2018)</p>
+                    <p><strong>Бакалавриат:</strong> Нефтегазовое дело</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-280px";
+        }
+    </script>
+</body>
+</html>

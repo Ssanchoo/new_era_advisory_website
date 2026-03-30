@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Pavlov | 技术总监 | NEA</title>
+    
+    <link rel="stylesheet" href="/css/person.css">
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="主导航">
+        <a href="/cn/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="关闭菜单"></i>
+            <ul>
+                <li><a href="/cn/index.html">首页</a></li>
+                <li><a href="/cn/about.html">关于我们</a></li>
+                <li class="dropdown">
+                    <a href="/cn/industries.html">行业领域</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/industries/energy.html">能源与资源</a></li>
+                        <li><a href="/cn/industries/government.html">政府与基础设施</a></li>
+                        <li><a href="/cn/industries/industrials.html">工业与交通</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/cn/services.html">服务项目</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/cn/services/consulting.html">管理咨询</a></li>
+                        <li><a href="/cn/services/tax.html">税务服务</a></li>
+                        <li><a href="/cn/services/law.html">法律咨询</a></li>
+                        <li><a href="/cn/services/people_workforce.html">人力资源</a></li>
+                    </ul>
+                </li>
+                <li><a href="/cn/contact.html">联系我们</a></li>
+                <li class="dropdown lang-dropdown">
+                    <a href="#" class="lang-current">
+                        ZH <i class="fa fa-globe" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/person/andrei.html">English (EN)</a></li>
+                        <li><a href="/ru/person_ru/andrei.html">Russian (RU)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="打开菜单"></i>
+    </nav>
+
+    <section class="service-detail-header">
+        <div class="header-content">
+            <h1>Andrey Pavlov</h1>
+            <p class="highlight-text">技术总监 | 首席地质学家</p>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-flex">
+            
+            <div class="profile-sidebar">
+                <div class="member-image-large" style="background-image: url('/images/geo.png');"></div>
+                <div class="sidebar-info">
+                    <p><strong>专业领域:</strong> <br>矿山地质与勘探</p>
+                    <p><strong>行业经验:</strong> <br>25 年</p>
+                    <p><strong>团队资历:</strong> <br>9 年</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <h3>个人简介</h3>
+                <p>Andrey Pavlov 是一位资深的矿业工程师和地质学家，在矿产勘探和矿床开发的各个阶段拥有超过 20 年的丰富经验。作为 Zhetysu Volframy 的技术总监兼首席地质学家，他全面负责哈萨克斯坦旗舰级钨矿开采项目的地质推进工作。</p>
+                
+                <h3 class="section-title">核心优势与贡献</h3>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-gem"></i> 在黄金开采行业拥有极其深厚的专业背景。</li>
+                    <li><i class="fas fa-mountain"></i> 提供全流程项目支持：涵盖从初步勘探到全面投产的所有环节。</li>
+                    <li><i class="fas fa-microscope"></i> 负责管理大型工业资产的复杂地质调查工作。</li>
+                </ul>
+
+                <h3 class="section-title">职业历程</h3>
+                <div class="career-item">
+                    <strong>目前</strong>
+                    <p>技术总监 / 首席地质学家, Zhetysu Volframy LLP</p>
+                </div>
+                <div class="career-item">
+                    <strong>曾任职机构</strong>
+                    <p>哈萨克斯坦钾肥公司 (Kazakhstan Potash Corporation)</p>
+                    <p>Kentor Gold Ltd</p>
+                    <p>Andash Mining Company LLC</p>
+                    <p>北吉尔吉斯地质考察团</p>
+                </div>
+
+                <h3 class="section-title">教育背景</h3>
+                <div class="career-item">
+                    <p><strong>2012年</strong> — Asanaliev 矿业技术学院</p>
+                    <p><strong>2001年</strong> — Razzakov 吉尔吉斯国立技术大学 (采矿与冶金专业)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-280px";
+        }
+    </script>
+</body>
+</html>

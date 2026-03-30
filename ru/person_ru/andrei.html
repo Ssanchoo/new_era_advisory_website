@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Андрей Павлов | Технический директор | NEA</title>
+    
+    <link rel="stylesheet" href="/css/person.css">
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Основная навигация">
+        <a href="/ru/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Закрыть меню"></i>
+            <ul>
+                <li><a href="/ru/index.html">Главная</a></li>
+                <li><a href="/ru/about.html">О компании</a></li>
+                <li class="dropdown">
+                    <a href="/ru/industries.html">Отрасли</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/industries/energy.html">Энергетика и ресурсы</a></li>
+                        <li><a href="/ru/industries/government.html">Госсектор и инфраструктура</a></li>
+                        <li><a href="/ru/industries/industrials.html">Промышленность и транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/ru/services.html">Услуги</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/services/consulting.html">Консалтинг</a></li>
+                        <li><a href="/ru/services/tax.html">Налоги</a></li>
+                        <li><a href="/ru/services/law.html">Право</a></li>
+                        <li><a href="/ru/services/people_workforce.html">Персонал и кадры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/ru/contact.html">Контакты</a></li>
+                <li class="dropdown lang-dropdown">
+                    <a href="#" class="lang-current">
+                        RU <i class="fa fa-globe" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/person/andrei.html">English (EN)</a></li>
+                        <li><a href="/cn/person_cn/andrei.html">Chinese (ZH)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Открыть меню"></i>
+    </nav>
+
+    <section class="service-detail-header">
+        <div class="header-content">
+            <h1>Андрей Павлов</h1>
+            <p class="highlight-text">Технический директор | Главный геолог</p>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-flex">
+            
+            <div class="profile-sidebar">
+                <div class="member-image-large" style="background-image: url('/images/geo.png');"></div>
+                <div class="sidebar-info">
+                    <p><strong>Специализация:</strong> <br>Горная геология и разведка</p>
+                    <p><strong>Опыт в отрасли:</strong> <br>25 лет</p>
+                    <p><strong>В команде проекта:</strong> <br>9 лет</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <h3>Профессиональный профиль</h3>
+                <p>Андрей Павлов — высококвалифицированный горный инженер-геолог с более чем 20-летним опытом работы на всех этапах разведки полезных ископаемых и освоения месторождений. В качестве технического директора и главного геолога «Жетісу Вольфрамы» он курирует геологическое развитие флагманского вольфрамового проекта Казахстана.</p>
+                
+                <h3 class="section-title">Экспертиза и ключевой вклад</h3>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-gem"></i> Глубокая специализация в золотодобывающей промышленности.</li>
+                    <li><i class="fas fa-mountain"></i> Полное сопровождение проектов: от начальной разведки до ввода рудника в эксплуатацию.</li>
+                    <li><i class="fas fa-microscope"></i> Управление сложными геологическими изысканиями для крупных промышленных активов.</li>
+                </ul>
+
+                <h3 class="section-title">Профессиональный путь</h3>
+                <div class="career-item">
+                    <strong>Настоящее время</strong>
+                    <p>Технический директор / Главный геолог, ТОО «Жетісу Вольфрамы»</p>
+                </div>
+                <div class="career-item">
+                    <strong>Предыдущий опыт</strong>
+                    <p>Kazakhstan Potash Corporation</p>
+                    <p>Kentor Gold Ltd</p>
+                    <p>ОсОО «Андаш Майнинг Компани»</p>
+                    <p>Северная Кыргызская геологическая экспедиция</p>
+                </div>
+
+                <h3 class="section-title">Образование</h3>
+                <div class="career-item">
+                    <p><strong>2012</strong> — Институт горный технологий им. У. Асаналиева</p>
+                    <p><strong>2001</strong> — Кыргызский государственный технический университет им. И. Раззакова (Горно-металлургический факультет)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-280px";
+        }
+    </script>
+</body>
+</html>
