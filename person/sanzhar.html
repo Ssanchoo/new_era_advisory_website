@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanzhar | IT Support Specialist | NEA</title>
+    
+    <link rel="stylesheet" href="/css/person.css">
+    <link rel="stylesheet" href="/css/template3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="/index.html"><img src="/images/logo2-.png" alt="NEA Logo" class="logo-img"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu"></i>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/industries/energy.html">Energy & Resources</a></li>
+                        <li><a href="/industries/government.html">Government & Infrastructure</a></li>
+                        <li><a href="/industries/industrials.html">Industrials & Mobility</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/services.html">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/services/consulting.html">Consulting</a></li>
+                        <li><a href="/services/tax.html">Tax</a></li>
+                        <li><a href="/services/law.html">Law</a></li>
+                        <li><a href="/services/people_workforce.html">People & Workforce</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li class="dropdown lang-dropdown">
+                    <a href="#" class="lang-current">
+                        EN <i class="fa fa-globe" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/ru/person_ru/sanzhar.html">Russian (RU)</a></li>
+                        <li><a href="/cn/person_cn/sanzhar.html">Chinese (ZH)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu"></i>
+    </nav>
+
+    <section class="service-detail-header">
+        <div class="header-content">
+            <h1>Sanzhar Turdaliyev</h1>
+            <p class="highlight-text">IT Support Specialist | Software Engineer</p>
+        </div>
+    </section>
+
+    <div class="profile-container">
+        <div class="profile-flex">
+            
+            <div class="profile-sidebar">
+                <div class="member-image-large" style="background-image: url('/images/it.PNG');"></div>
+                <div class="sidebar-info">
+                    <p><strong>Expertise:</strong> <br>Backend Development & IT Support</p>
+                    <p><strong>Tech Stack:</strong> <br>Python (FastAPI, Django), PHP</p>
+                    <p><strong>Location:</strong> <br>Almaty, Kazakhstan</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <h3>Professional Profile</h3>
+                <p>Sanzhar is a Software Engineering professional with a strong focus on backend development. Skilled in Python and PHP, he specializes in building scalable server-side applications and seamless API integrations. At NEA, Sanzhar bridges the gap between software development and internal IT operations, ensuring the stability and optimization of the company's digital infrastructure.</p>
+                
+                <h3 class="section-title">Core Competencies</h3>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-code"></i> <strong>Backend Development:</strong> Expert implementation of FastAPI, Django, and Flask frameworks.</li>
+                    <li><i class="fas fa-database"></i> <strong>Data Engineering:</strong> Proficient in PostgreSQL/SQL query optimization and database administration.</li>
+                    <li><i class="fas fa-tools"></i> <strong>IT Operations:</strong> Automation of internal business processes and server-side logic maintenance.</li>
+                    <li><i class="fas fa-trophy"></i> <strong>Competitive Programming:</strong> ICPC 2024 participant, demonstrating advanced problem-solving and algorithmic skills.</li>
+                </ul>
+
+                <h3 class="section-title">Professional Experience</h3>
+                <div class="career-item">
+                    <strong>August 2025 – Present</strong>
+                    <p>Software Engineer, Zhetysu Volframy LLP / Jiaxin International Resources</p>
+                    <p class="sub-text">Developing backend systems, supporting internal IT infrastructure, and process automation.</p>
+                </div>
+                <div class="career-item">
+                    <strong>July 2024 – April 2025</strong>
+                    <p>Backend Developer Intern (Junior), Batys Petroleum</p>
+                    <p class="sub-text">Developed REST APIs using FastAPI, managed PostgreSQL databases, and optimized application performance.</p>
+                </div>
+
+                <h3 class="section-title">Key Projects</h3>
+                <div class="career-item">
+                    <strong>Equipment Tracking System</strong>
+                    <p>Designed and deployed an internal PHP-based system for real-time asset monitoring, streamlining equipment management across the company.</p>
+                </div>
+
+                <h3 class="section-title">Education & Languages</h3>
+                <div class="career-item">
+                    <p><strong>Caspian University:</strong> Bachelor of Software Engineering (Class of 2025).</p>
+                    <p><strong>Languages:</strong> Kazakh (Native), Russian (Fluent), English (Intermediate).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-280px"; }
+    </script>
+</body>
+</html>
